@@ -1,0 +1,66 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #d8d8d8;
+}
+
+form{
+    padding: 2rem 0rem;
+}
+
+input{
+    height: 30px;
+    margin-bottom: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+}
+
+.boxForm, .boxTwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.formOne, .formTwo, .resultColum1, .resultColum2{
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.alignBtn{
+    text-align: center;
+}
+
+.btn{
+    width: 180px;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #313131;
+}
+
+.resultado, .boxOne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.resultBoxOne{
+    text-align: center;
+    width: 640px;
+}
+
+.resultMeses{
+    text-align: center;
+    width: 380px;
+}

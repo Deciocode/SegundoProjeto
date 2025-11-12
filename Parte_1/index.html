@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <!-- Semântica HTML! -->
+    <header id="topo">
+        <section class="topo">
+            <h1>Gerenciamento de Conta - Login / Cadastro.</h1>
+        </section>
+    </header>
+
+    <main id="conteudo">
+        <section class="primeiroForm">
+            <form action="" method="">
+                <label>Digite seu E-mail:</label>
+                <input type="email" name="emailLogin" placeholder="Digite seu E-mail aqui..." class="campForm">
+                <label>Digite sua Senha:</label>
+                <input type="password" name="senha" placeholder="Digite sua Senha aqui..." class="campForm" maxlength="8">
+                <button name="btnAcessar" class="btnAcessar">Acessar</button>
+            </form>
+        </section>
+
+        <section class="segundoForm">
+            <form action="" method="">
+                <label>Digite seu Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu Nome aqui..." class="campForm">
+                <label>Digite seu E-mail:</label>
+                <input type="email" name="emailCadastro" placeholder="Digite seu E-mail aqui..." class="campForm">
+                <label>Selecione sua Data de Nascimento:</label>
+                <input type="date" name="idade" class="campFormData">
+                <label>Selecione seu Setor:</label>
+                <select name="setor" class="selectForm">
+                    <option value="">Selecione</option>
+                    <option value="">Administrativo</option>
+                    <option value="">Secretaria</option>
+                    <option value="">Financeiro</option>
+                    <option value="">Recursos Humanos</option>
+                    <option value="">Logística</option>
+                    <option value="">T.I.</option>
+                </select>
+                <label>Digite sua Senha:</label>
+                <input type="password" name="senha" placeholder="Digite sua Senha aqui..." class="campForm" maxlength="8">
+                <label>Digite novamente sua Senha:</label>
+                <input type="password" name="repSenha" placeholder="Digite novamente sua Senha aqui..." class="campForm" maxlength="8">
+                <label>Observação (Opcional):</label>
+                <textarea name="obs" rows="4" class="campFormObs" placeholder="Digite uma Observação aqui..."></textarea>
+                <button name="btnCadastrar" class="btnCadastrar">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <section class="end">
+            <span>Acesse: <a href="https://www.wmbarros.com.br" target="_blank" class="linkSite">WMBarros Treinamento em TI</a></span>
+            <div class="copy">
+                <span>© 2016-2024. WMBarros Treinamento em TI - Todos os direitos reservados.</span>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

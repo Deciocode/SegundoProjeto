@@ -1,0 +1,152 @@
+/* 1 rem = 16 pixels. */
+
+:root{
+    --fontTahoma: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --corAzulClaro: #00d4ff;
+    --corAzul: #090979;
+    --corAzulDark: #020024;
+    --corAzulEscuro: #001c4c;
+    --corVerde: #008000;
+    --corVerdeEscuro: #004100;
+    --corPreto: #000000;
+    --corBranco: #ffffff;
+    --corVermelho: #ff0000;
+    --corLaranja: #ff2a00;
+}
+
+body{
+
+    /* 
+        padding: Margin interna.
+        margin: Margin externa.
+        border: Borda.
+    */
+
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: var(--fontTahoma);
+    background: var(--corAzulDark);
+    background: linear-gradient(90deg, var(--corAzulDark) 0%, var(--corAzul) 35%, var(--corAzulClaro) 100%); 
+    color: var(--corBranco);
+}
+
+h1{
+    margin: 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#topo{
+    background-color: var(--corAzulDark);
+    padding: 2.2rem 0rem;
+    text-align: center;
+}
+
+#rodape{
+    background-color: var(--corPreto);
+    color: var(--corBranco);
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+.campForm, .campFormData, .selectForm, .campFormObs{
+    margin-bottom: 1.2rem;
+}
+
+.campForm, .campFormData, .selectForm{
+    width: 100%;
+    max-width: 280px;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+
+.campFormObs{
+    width: 100%;
+    max-width: 360px;
+    height: 70px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-family: var(--fontTahoma);
+    font-size: 14px;
+}
+
+.btnAcessar{
+    width: 90px;
+    height: 34px;
+    background-color: var(--corVerde);
+    color: var(--corBranco);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btnAcessar:hover{
+    background-color: var(--corVerdeEscuro);
+}
+
+.btnCadastrar{
+    width: 90px;
+    height: 34px;
+    background-color: var(--corAzulDark);
+    color: var(--corBranco);
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btnCadastrar:hover{
+    background-color: var(--corLaranja);
+}
+
+.linkSite{
+    text-decoration: none;
+    color: var(--corAzulClaro);
+}
+
+.linkSite:hover{
+    color: var(--corBranco);
+    font-weight: bold;
+}
+
+/* Responsividade! */
+/* Resolução para Celular Pequeno: 320px - 568px. */
+/* Resolução para Celular: 568px - 768px. */
+/* Resolução para Tablet: 768px - 992px, 998px, 1024px. */
+/* Resolução para Notebook e Desktop: 992px, 998px, 1024px, ... */
+
+@media screen and (min-width: 768px) {
+    #conteudo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #conteudo{
+        display: grid;
+        justify-content: center;
+        padding: 2.2rem 0rem;
+    }
+
+    .primeiroForm{
+        border: 1px solid var(--corBranco);
+        border-radius: 4px;
+        margin-bottom: 2.2rem;
+    }
+
+    .segundoForm{
+        border: 1px solid var(--corBranco);
+        border-radius: 4px;
+    }
+}
